@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 0;
+    background-image: url('Screenshot\ \(165\).png'); /* Replace 'background.jpg' with the path to your image */
+    background-size: cover;
+    background-position: center;
+  }
+ 
+  
+.container {
+    width: 80%;
+    margin: 200px auto;
+    text-align: left;
+  }
+  .centered-text{
+    display: block;
+    margin:  auto;
+
+  }
+  
+  h1 {
+   
+    margin-bottom:2px;
+    color: #000000
+    
+;
+  }
+
+  h3 {
+    margin-top: 5px;
+    color: #000000
+;
+  }
+  
+  p {
+    color: #150b0b;
+  }
+  
+  .buttons {
+    margin-top: 20px;
+  }
+  
+  .login-btn,
+  .register-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 0 10px;
+  }
+  
+  .login-btn:hover,
+  .register-btn:hover {
+    background-color: #0056b3;
+  }
+
+
+.container {
+    position: relative;
+  }
+  
+  .link {
+  position: fixed;
+  top: 20px;
+  right:80px;
+  font-size: 16px;
+  color: #03080d; /* Blue color for the link */
+  text-decoration: underline;
+  
+
+}
+
+.link1 {
+    position: fixed;
+    top: 20px;
+    right:180px;
+    font-size: 16px;
+    color: #060a0f; /* Blue color for the link */
+    text-decoration: underline;
+}
