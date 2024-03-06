@@ -21,7 +21,7 @@
     color: #000;
 }
 .student-profile .card {
-    margin-top: 100px;
+    margin-top: 50px;
     border-radius: 10px;
 }
 .student-profile .card .card-header .profile_img {
@@ -29,7 +29,7 @@
     height: 300px;
     object-fit: cover;
      margin-top: 50px auto;
-    border: 10px solid #ccc;
+    border: 5px solid #ccc;
     border-radius: 50%;
 }
 .student-profile .card h3 {
@@ -48,13 +48,14 @@
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
-    margin: 0 10px;
+    margin: 0 5px;
     white-space: 10px;
+    margin-left: 150px;
    
     
   }
   h3 {
-   text-align: center;
+   margin-left: 100px;
    margin-bottom:2px;
    color: #000000
    
@@ -74,18 +75,14 @@
     
   }
 
-  a {
-    margin-left: 1opx;
-    
-;
-  }
-  .buttons {
-    margin-left: 0px;
-  }
+
+  
   
   .login-btn:hover,
   .register-btn:hover {
     background-color: #0a777e;
+   
+
   }
 .student-profile .table th,
 .student-profile .table td {
@@ -96,55 +93,72 @@
     </style>
 </head>
 <body>
-    <div class="student-profile py-2">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-4">
-              <div class="card shadow-sm">
-                <div class="card-header bg-transparent text-center">
-                  <img class="profile_img" src="Screenshot (185).png" alt="student dp">
-                  <h3>Sadman Tihan</h3>
-                </div>
-                <div class="card-body">
-                  <p class="mb-0"><strong class="pr-1">Elderly ID:</strong>10001</p>
-                  <p class="mb-0"><strong class="pr-1">Points :</strong>100</p>
-                  
-                </div>
-              </div>
+  <div class="student-profile py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="card shadow-sm">
+            <div class="card-header bg-transparent text-center">
+              <img class="profile_img" src="Screenshot (186).png" alt="student dp">
+              <h2>Sadman Tihan</h2>
             </div>
-            <div class="col-lg-6">
-              <div class="card shadow-sm">
-                <div class="card-header bg-transparent border-0">
-                </div>
-                <div class="card-body pt-0">
-                  <h3>Which types of services do you want to get?</h3><br><br>
-                  <div class="buttons">
-                    <a href="PersonalCare.html" class="login-btn">Personal care</a>
-                    <a href="Providerlogin.html" class="register-btn">Transportation</a>
-                    <a href="https://about.com" class="register">Meal Delivery</a><br><br>
-                    <a href="https://home.com" class="register">Dance Partner      </a>
-                    <a href="https://about.com" class="register">Housekeeping</a>
-                    <a href="https://home.com" class="register"> Home safety</a><br><br>
-                    <a href="https://home.com" class="register">Financial Help</a>
-                    <a href="https://home.com" class="register">Medication</a>
-                    <a href="https://home.com" class="register">Health Checkup</a><br><br>
-                    <a href="https://home.com" class="register">Respite care</a>
-                    <a href="https://home.com" class="register">Gossip Partner</a>
-                    <a href="https://home.com" class="register">Chore Service</a><br><br>
-                    
-                </div>
-              </div>
-                <div style="height: 0px"></div>
-              
-                <div class="card-header bg-transparent border-0">
-                </div>
-                <div class="card-body pt-0">
-                    <p><strong>Number of taken Services:</strong> 00</p> 
-                </div>
-              </div>
+            <div class="card-body">
+              <p class="mb-0"><strong class="pr-1">Elderly ID:</strong>10001</p>
+              <p class="mb-0"><strong class="pr-1">Points:</strong>100</p>
+            
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-8">
+          <div class="card shadow-sm">
+            <div class="card-header bg-transparent border-0">
+              <h3 class="mb-0"><i class="far fa-clone pr-1"></i>General Information</h3>
+            </div>
+            <div class="card-body pt-0">
+              <table class="table table-bordered">
+                <tr>
+                  <th width="30%">Name</th>
+                  <td width="2%">:</td>
+                  <td>Sadman Tihan</td>
+                </tr>
+                <tr>
+                  <th width="30%">Elderly Id</th>
+                  <td width="2%">:</td>
+                  <td>10001</td>
+                </tr>
+                <tr>
+                  <th width="30%">Age</th>
+                  <td width="2%">:</td>
+                  <td>62</td>
+                </tr>
+                <tr>
+                  <th width="30%">Address</th>
+                  <td width="2%">:</td>
+                  <td>Railgate,CU</td>
+                </tr>
+                <tr>
+                  <th width="30%">Number of the taken services</th>
+                  <td width="2%">:</td>
+                  <td>00</td>
+                </tr>
+                
+              </table>
+            </div>
+          </div>
+            <div style="height: 26px"></div>
+          <div class="card shadow-sm">
+            <div class="card-header bg-transparent border-0">
+              <h3 class="mb-0"><i class="far fa-clone pr-1"></i>DO YOU WANT TO TAKE SERVICES?</h3>
+            </div>
+            <div class="card-body pt-2">
+              <a href="Elderlylogin.html" class="login-btn">YES</a>
+             <a href="Providerlogin.html" class="register-btn">NO</a>
+                
             </div>
           </div>
         </div>
       </div>
+    </div>
+  </div>
 </body>
 </html>
