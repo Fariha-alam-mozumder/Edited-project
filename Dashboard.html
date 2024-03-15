@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('Screenshot\ \(165\).png'); /* Replace 'background.jpg' with the path to your image */
+             background-size: cover;
+           
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            margin-left: 330px;
+        
+        }
+
+        h1 {
+            text-align: center;
+            color: #0c0c0c;
+        }
+        h2 {
+            text-align: center;
+            margin-top: 100px;
+            color: #0c0c0c;
+        }
+        .sidebar {
+            background-color: #444545;
+            color: #fff;
+            width: 200px;
+            height: 100vh;
+            position: fixed;
+            left: 0;
+            top: 0;
+            text-align: center;
+        }
+        .login-btn,
+        .register-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #89919a;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+   
+     width: 140px;
+  }
+  
+  .login-btn:hover,
+  .register-btn:hover {
+    background-color:#89919a;
+  }
+  .login-bt,
+        .register-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0056b3;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+   margin-left: 300px;
+     width: 140px;
+  }
+  
+  .login-bt:hover,
+  .register-btn:hover {
+    background-color:#0056b3;
+  }
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        .sidebar ul li {
+            padding: 10px;
+        }
+        
+        .sidebar ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        
+        .content {
+            margin-left: 200px;
+            padding: 20px;
+        }
+
+        table {
+            width: 80%;
+            border-collapse: collapse;
+            border: 5px;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            height: 40px;
+            background-color: #f2f2f2;
+        }
+        td{
+            height: 40px;
+            background-color: #c2c3c4;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <ul>
+            <li><a href="DASHBOARD.html" class="login-btn">Dashboard</a></li>
+            <li><a href="info1.html">Elderly Info</a></li>
+            <li><a href="info2.html">Provider Info</a></li>
+            <li><a href="info1.html">Settings</a></li>
+        </ul>
+    </div>
+    <h2>Elderly Requests for Service Providers</h2>
+<div class="container">
+<table>
+  <tr>
+    <th>Elderly Person's Name</th>
+    <th>Service Provider</th>
+  </tr>
+  <tr>
+    <td>Rima
+        <button class="login-bt">Discard points</button>
+    </td>
+    <td>Sadman Tihan,Personal Care
+        <button class="login-bt">Gives points</button>
+    </td>
+  </tr>
+  <tr>
+    <td>Dipa
+        <button class="login-bt">Discard points</button>
+    </td>
+    <td>Numan Khan,Dance partner
+        <button class="login-bt">Gives points</button>
+    </td>
+  </tr>
+  <tr>
+    <td>Fariha alam
+    <button class="login-bt">Discard points</button></td>
+    <td>Irina,Gossip partner
+        <button class="login-bt">Gives points</button></td>
+    </td>
+  </tr>
+  <!-- Add more rows as needed -->
+</table>
+</div>
+    <div class="content">
+        <h1></h1>
+        <p></p>
+    </div>
+</body>
+</html>
