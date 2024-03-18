@@ -3,33 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Dashboard</title>
+    <title>Person Profile</title>
+    <!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
+<!-- Bootstrap CSS -->
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
+<!-- Font Awesome CSS -->
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css'>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-image: url('Screenshot\ \(195\).png');/* Replace 'background.jpg' with the path to your image */
-             background-size: cover;
-           
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            padding: 20px;
-            margin-left: 330px;
-        
-        }
+    background: #67B26F;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4ca2cd, #67B26F);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4ca2cd, #67B26F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 0;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    color: #000;
+}
+.student-profile .card {
+    margin-top: 50px;
+    border-radius: 10px;
+}
+.student-profile .card .card-header .profile_img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+     margin-top: 50px auto;
+    border: 5px solid #ccc;
+    border-radius: 50%;
+}
+.student-profile .card h3 {
+    font-size: 20px;
+    font-weight: 700;
+}
+.student-profile .card p {
+    font-size: 16px;
+    color: #000;
+}
+.login-btn,
+  .register-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0a777e;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 0 2px;
+    white-space: 10px;
+    margin-left: 0px;
+   
+    
+  }
+  h3 {
+   margin-left: 200px;
+   margin-bottom:2px;
+   color: #000000
+   
+;
+ }
+  
+  .register {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0a777e;
+    color: #fff;
+   
+    border-radius: 5px;
+    margin: 0 10px;
+    white-space: 10px;
+    margin-left: 280px;
+    text-decoration: none;
+   
+    
+  }
 
-        h1 {
-            text-align: center;
-            color: #0c0c0c;
-        }
-        h2 {
-            text-align: center;
-            margin-top: 100px;
-            color: #0c0c0c;
-        }
         .sidebar {
             background-color: #444545;
             color: #fff;
@@ -40,38 +87,7 @@
             top: 0;
             text-align: center;
         }
-        .login-btn,
-        .register-btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #89919a;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-   
-     width: 140px;
-  }
-  
-  .login-btn:hover,
-  .register-btn:hover {
-    background-color:#89919a;
-  }
-  .login-bt,
-        .register-btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #3e5064;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-   margin-left: 300px;
-     width: 140px;
-  }
-  
-  .login-bt:hover,
-  .register-btn:hover {
-    background-color:#3e5064;
-  }
+        
         .sidebar ul {
             list-style-type: none;
             padding: 0;
@@ -89,110 +105,191 @@
         .content {
             margin-left: 200px;
             padding: 20px;
+            background-color: #89919a;
         }
 
-        table {
-            width: 80%;
-            border-collapse: collapse;
+        .container {
+            width: 100%;
+            margin: auto;
+            padding: 20px;
+            margin-left: 320px;
+           
+        }
+
+        h1 {
+            text-align: center;
+            color: #0c0c0c;
+        }
+
+        .info {
+            background-color: #bdc1c1;
             border-radius: 5px;
-        }
-        th, td {
-            padding: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            margin-left: 300px;
+            width:600px;
             text-align: center;
-            border-bottom: 1px solid #ddd;
-        }
-        th {
-            text-align: center;
-            height: 40px;
-            background-color: #f2f2f2;
-        }
-        td{
-            height: 40px;
-            background-color: #c2c3c4;
         }
 
+        .info h2 {
+            color: #100f0f;
+            margin-top: 0;
+        }
+
+        .info p {
+            color: #070707;
+        }
+        .login-btn,
+  .login-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color:#0a777e ;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+   
+    width: 140px;
+  }
+  
+  .login-btn:hover,
+  .register-btn:hover {
+    background-color:#89919a;
+  }
+
+        .info ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .info li {
+            margin-bottom: 10px;
+        }
+
+
+  
+  
+  .login-btn:hover,
+  .register-btn:hover {
+    background-color: #0a777e;
+   
+
+  }
+  .register:hover {
+    background-color: #0a777e;
+   
+
+  }
+
+.student-profile .table td {
+    font-size: 17px;
+    padding: 5px 10px;
+    color: #000;
+    text-align: center;
+    height: 50px;
+   
+}
+.student-profile .table th
+{
+    font-size: 17px;
+    padding: 5px 10px;
+    color: #110d0d;
+    text-align: center;
+    height: 50px;
+    background-color: #a4aba5 ;
+    border-radius: 5px;
+}
     </style>
 </head>
 <body>
     <div class="sidebar">
         <ul>
+            <br><br>
             <li><a href="DASHBOARD.html" class="login-btn">Dashboard</a></li>
-            <li><a href="info1.html">Elderly Info</a></li>
+            <li><a href="info1.html" >Elderly Info</a></li>
             <li><a href="info2.html">Provider Info</a></li>
+        
         </ul>
     </div>
-    <h2>Booking Information</h2>
-<div class="container">
-<table>
-  <tr>
-    <th>Elderly Name</th>
-    <th>Provider Name</th>
-    <th>Service</th>
-    <th>Transaction of points </th>
-    <th>Date</th>
-    <th>Status</th>
-  </tr>
-  <tr>
-    <td>Rima
-    </td>
-    <td>Sadman Tihan
-    </td>
-    <td>Personal Care
-    </td>
-    <td>20
-    </td>
-    <td>03/12/2023
-       
-    </td>
-    <td>Completed
-    </td>
-  </tr>
-  <tr>
-    <td>Dipa
-       
-    </td>
-    <td>Numan Khan
-       
-    </td>
-    <td>Dance partner
-       
-    </td>
-    <td>30
-       
-    </td>
-    <td>03/02/2024
-       
-    </td>
-    <td>completed
-       
-    </td>
-  </tr>
-  <tr>
-    <td>Fariha alam
-   
-    <td>Irina
-       
-    </td>
-    <td>Gossip partner
-       
-    </td>
-    <td>30
-       
-    </td>
-    <td>17/03/2024
-       
-    </td>
-    <td>In process
-       
-    </td>
 
-  </tr>
-  <!-- Add more rows as needed -->
-</table>
-</div>
-    <div class="content">
-        <h1></h1>
-        <p></p>
+  <div class="student-profile py-4">
+    <div class="container">
+      <div class="row">
+       
+        <div class="col-lg-10">
+          <div class="card shadow-sm">
+            <div class="card-header bg-transparent border-0">
+              <h3 class="mb-0"><i class="far fa-clone pr-4"></i>Booking Information</h3>
+            </div>
+            <div class="card-body pt-6">
+              <table class="table table-bordered">
+                <tr>
+                    <th>Elderly Name</th>
+                    <th>Provider Name</th>
+                    <th>Service</th>
+                    <th>Transaction of points </th>
+                    <th>Date</th>
+                    <th>Status</th>
+                  </tr>
+                  <tr>
+                    <td>Rima
+                    </td>
+                    <td>Sadman Tihan
+                    </td>
+                    <td>Personal Care
+                    </td>
+                   
+                    <td>20
+                    </td>
+                    <td>03/12/2023
+                       
+                    </td>
+                    <td>Completed
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Dipa                      
+                    </td>
+                    <td>Numan Khan
+                    </td>
+                    <td>Dance Partner
+                    </td>
+                    <td>30
+                       
+                    </td>
+                    <td>03/02/2024
+                       
+                    </td>
+                    <td>completed
+                       
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Fariha alam</td>
+                </td>
+                <td>Irina
+                </td>
+                <td>Gossip Partner
+                </td>
+                    <td>30
+                       
+                    </td>
+                    <td>17/03/2024
+                       
+                    </td>
+                    <td>Incomplete
+                       
+                    </td>
+                
+                  </tr>
+                 
+                
+              </table>
+            </div>
+          </div>
+            
+        </div>
+      </div>
     </div>
+  </div>
 </body>
 </html>
